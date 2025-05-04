@@ -10,7 +10,8 @@
       text-align: center;
       padding-top: 100px;
     }
-    input {
+    input[type="password"],
+    input[type="text"] {
       padding: 10px;
       font-size: 16px;
       border-radius: 8px;
@@ -23,9 +24,15 @@
       margin-top: 20px;
       border: none;
       border-radius: 8px;
-      background-color: #ff69b4;
+      background-color: #e91e63;
       color: white;
       cursor: pointer;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #333;
     }
     .error {
       color: red;
@@ -37,12 +44,22 @@
 
   <h2>Hii😄 it's me Vinay</h2>
   <p>Enter the password just for confirmation😁</p>
+  
   <input type="password" id="passwordInput" placeholder="Enter password here">
+  <label>
+    <input type="checkbox" onclick="togglePassword()"> Show Password
+  </label>
+  
   <br>
   <button onclick="checkPassword()">Submit</button>
   <div class="error" id="errorMessage"></div>
 
   <script>
+    function togglePassword() {
+      const input = document.getElementById("passwordInput");
+      input.type = input.type === "password" ? "text" : "password";
+    }
+
     function checkPassword() {
       const correctPassword = "Happy_birthday(Parii !!)[0012](^^)";
       const enteredPassword = document.getElementById("passwordInput").value;
