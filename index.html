@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Password</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      text-align: center;
+      padding-top: 100px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 300px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Hii😄 it's me Vinay</h2>
+  <p>Enter the password just for confirmation😁</p>
+  <input type="password" id="passwordInput" placeholder="Enter password here">
+  <br>
+  <button onclick="checkPassword()">Submit</button>
+  <div class="error" id="errorMessage"></div>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "Happy_birthday(Parii !!)[0012](^^)";
+      const enteredPassword = document.getElementById("passwordInput").value;
+
+      if (enteredPassword === correctPassword) {
+        window.location.href = "birthday.html";
+      } else {
+        document.getElementById("errorMessage").textContent = "Oops! Wrong password.";
+      }
+    }
+  </script>
+
+</body>
+</html>
