@@ -1,0 +1,112 @@
+[11:23 pm, 4/5/2025] Sunita: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Password</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      text-align: center;
+      padding-top: 100px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 300px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Hii😄 it's me Vinay</h2>
+  <p>Enter the password just for confirmation😁</p>
+  <input type="password" id="passwordInput" placeholder="Enter password here">
+  <br>
+  <button onclick="checkPassword()">Submit</button>
+  <div class="error" id="errorMessage"></div>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "Happy_birthday(Parii !!)[0012](^^)";
+      const enteredPassword = document.getElementById("passwordInput").value;
+
+      if (enteredPassword === correctPassword) {
+        window.location.href = "birthday.html";
+      } else {
+        document.getElementById("errorMessage").textContent = "Oops! Wrong password.";
+      }
+    }
+  </script>
+
+</body>
+</html>
+[11:36 pm, 4/5/2025] Sunita: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Congratulations Sanju!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #333;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #d2691e;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+
+    .confetti {
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Congratulations, Sanju!</h1>
+    <p>We are so proud of you and your amazing achievements. Your hard work, determination, and passion are truly inspiring!</p>
+    <p>Keep shining and chasing your dreams!</p>
+    <div class="confetti">You did it!</div>
+  </div>
+</body>
+</html>
